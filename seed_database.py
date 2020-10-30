@@ -60,7 +60,16 @@ for n in range(10):
     password = 'test'
 
     user = crud.create_user(email, password)
+    for n in range(10):
+        score = randint(1, 5)
+        random_movie = choice (movies_in_db)
 
-    # TODO: create a user here
+        crud.create_rating(score, user, random_movie)
+
+
 
     # TODO: create 10 ratings for the user
+
+    
+
+    
